@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CV - Your Name</title>
+    <title>CV</title>
     <meta name="author" content="Your Name" />
     <meta
       name="description"
-      content="Academic CV for Your Name: education, research, publications, teaching, awards, and projects."
+      content="Academic CV: EECS, agentic AI, technical leadership, education, and projects."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,12 +16,7 @@
       rel="stylesheet"
     />
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
+      * { box-sizing: border-box; margin: 0; padding: 0; }
       body {
         background: #f4f4f4;
         color: #000;
@@ -29,16 +24,8 @@
         font-size: 11pt;
         line-height: 1.4;
       }
-
-      a {
-        color: #000;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
+      a { color: #000; text-decoration: none; }
+      a:hover { text-decoration: underline; }
       .download-btn {
         align-items: center;
         background: #fff;
@@ -57,13 +44,7 @@
         top: 20px;
         z-index: 10;
       }
-
-      .download-btn:hover {
-        background: #f5f5f5;
-        border-color: #999;
-        color: #000;
-      }
-
+      .download-btn:hover { background: #f5f5f5; border-color: #999; color: #000; }
       .cv-container {
         background: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -72,26 +53,10 @@
         min-height: 11in;
         padding: 0.6in 0.8in;
       }
-
-      .cv-header {
-        margin-bottom: 2rem;
-        text-align: center;
-      }
-
-      .cv-header h1 {
-        font-size: 20pt;
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-
-      .header-details {
-        margin-bottom: 4px;
-      }
-
-      .cv-section {
-        margin-bottom: 1.5rem;
-      }
-
+      .cv-header { margin-bottom: 2rem; text-align: center; }
+      .cv-header h1 { font-size: 20pt; font-weight: 700; margin-bottom: 8px; }
+      .header-details { margin-bottom: 4px; }
+      .cv-section { margin-bottom: 1.5rem; }
       .cv-section h2 {
         border-bottom: 1px solid #000;
         font-size: 12pt;
@@ -99,11 +64,7 @@
         margin-bottom: 10px;
         padding-bottom: 2px;
       }
-
-      .cv-entry {
-        margin-bottom: 12px;
-      }
-
+      .cv-entry { margin-bottom: 12px; }
       .entry-line-1 {
         align-items: baseline;
         display: flex;
@@ -111,91 +72,24 @@
         justify-content: space-between;
         margin-bottom: 2px;
       }
-
-      .entry-title {
-        flex: 1;
-        font-weight: 700;
-        min-width: 0;
-      }
-
-      .entry-date {
-        flex-shrink: 0;
-        font-style: italic;
-        text-align: right;
-      }
-
-      .entry-line-2 {
-        margin-bottom: 2px;
-      }
-
-      .entry-details ul {
-        list-style-type: disc;
-        margin: 2px 0 0 18px;
-      }
-
-      .entry-details li {
-        margin-bottom: 2px;
-        text-align: justify;
-      }
-
+      .entry-title { flex: 1; font-weight: 700; min-width: 0; }
+      .entry-date { flex-shrink: 0; font-style: italic; text-align: right; }
+      .entry-line-2 { margin-bottom: 2px; }
+      .entry-details ul { list-style-type: disc; margin: 2px 0 0 18px; }
+      .entry-details li { margin-bottom: 2px; text-align: justify; }
       @media (max-width: 760px) {
-        body {
-          background: #fff;
-        }
-
-        .download-btn {
-          position: static;
-          margin: 12px;
-          width: fit-content;
-        }
-
-        .cv-container {
-          box-shadow: none;
-          margin: 0;
-          min-height: auto;
-          padding: 28px 22px;
-        }
-
-        .entry-line-1 {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 0;
-        }
-
-        .entry-date {
-          text-align: left;
-        }
+        body { background: #fff; }
+        .download-btn { position: static; margin: 12px; width: fit-content; }
+        .cv-container { box-shadow: none; margin: 0; min-height: auto; padding: 28px 22px; }
+        .entry-line-1 { align-items: flex-start; flex-direction: column; gap: 0; }
+        .entry-date { text-align: left; }
       }
-
       @media print {
-        @page {
-          margin: 0.6in 0.8in;
-          size: letter;
-        }
-
-        body {
-          background: #fff;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-
-        .download-btn {
-          display: none !important;
-        }
-
-        .cv-container {
-          box-shadow: none;
-          margin: 0;
-          max-width: 100%;
-          min-height: auto;
-          padding: 0;
-        }
-
-        .cv-section,
-        .cv-entry {
-          break-inside: avoid;
-          page-break-inside: avoid;
-        }
+        @page { margin: 0.6in 0.8in; size: letter; }
+        body { background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .download-btn { display: none !important; }
+        .cv-container { box-shadow: none; margin: 0; max-width: 100%; min-height: auto; padding: 0; }
+        .cv-section, .cv-entry { break-inside: avoid; page-break-inside: avoid; }
       }
     </style>
   </head>
@@ -212,51 +106,77 @@
     <main class="cv-container">
       <header class="cv-header">
         <h1>Your Name</h1>
-        <div class="header-details">Department / Major</div>
-        <div class="header-details">University or Organization</div>
+        <div class="header-details">B.S. Student in Electrical Engineering and Computer Science</div>
+        <div class="header-details">Gwangju Institute of Science and Technology (GIST)</div>
         <div class="header-contact">
           <a href="mailto:you@example.com">you@example.com</a> |
-          <a href="https://your-id.github.io/">Homepage</a> |
-          <a href="https://www.linkedin.com/in/your-id/">LinkedIn</a> |
-          <a href="https://github.com/your-id">GitHub</a>
+          <a href="https://ahro-t.github.io/cv/">Homepage</a> |
+          <a href="https://github.com/Ahro-T">GitHub</a> |
+          <a href="https://www.linkedin.com/in/your-id/">LinkedIn</a>
         </div>
       </header>
+
+      <section class="cv-section" aria-labelledby="interests">
+        <h2 id="interests">Research Interests</h2>
+        <div class="cv-entry">
+          <div class="entry-line-2">
+            Agentic AI, LLM-based agents, autonomous workflow orchestration, AI-assisted education, software automation, and applied AI systems.
+          </div>
+        </div>
+      </section>
 
       <section class="cv-section" aria-labelledby="education">
         <h2 id="education">Education</h2>
         <div class="cv-entry">
           <div class="entry-line-1">
-            <span class="entry-title">University Name</span>
-            <span class="entry-date">Mar. 2024 – Present</span>
+            <span class="entry-title">Gwangju Institute of Science and Technology (GIST)</span>
+            <span class="entry-date">Present</span>
           </div>
-          <div class="entry-line-2">B.S. / M.S. / Ph.D. in Your Major (GPA: optional)</div>
+          <div class="entry-line-2">B.S. in Electrical Engineering and Computer Science</div>
         </div>
       </section>
 
-      <section class="cv-section" aria-labelledby="publications">
-        <h2 id="publications">Publications</h2>
-        <div class="cv-entry">
-          <div class="entry-line-1">
-            <span class="entry-title">Paper Title or “Manuscript in Preparation”</span>
-            <span class="entry-date">2026</span>
-          </div>
-          <div class="entry-line-2">Author A, <strong>Your Name</strong>, Author C</div>
-          <div class="entry-line-2"><em>Venue Name</em> | <a href="#">DOI / Project Link</a></div>
-        </div>
-      </section>
+      <section class="cv-section" aria-labelledby="experience">
+        <h2 id="experience">Leadership and Experience</h2>
 
-      <section class="cv-section" aria-labelledby="research">
-        <h2 id="research">Research Experiences</h2>
         <div class="cv-entry">
           <div class="entry-line-1">
-            <span class="entry-title">Undergraduate Researcher</span>
-            <span class="entry-date">Jan. 2026 – Present</span>
+            <span class="entry-title">Team Lead, Agentic AI Research and Education Team</span>
+            <span class="entry-date">Present</span>
           </div>
-          <div class="entry-line-2">Lab Name, University Name (Prof. Name)</div>
+          <div class="entry-line-2">Gwangju Institute of Science and Technology (GIST)</div>
           <div class="entry-details">
             <ul>
-              <li>Describe your research contribution with concrete methods, tools, and outcomes.</li>
-              <li>Use action verbs: developed, implemented, analyzed, evaluated, proposed.</li>
+              <li>Lead a team focused on researching, applying, and teaching agentic AI systems.</li>
+              <li>Coordinate study, curriculum, and project activities around LLM agents, tool use, and autonomous workflows.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="entry-line-1">
+            <span class="entry-title">Chief Technology Officer</span>
+            <span class="entry-date">Present</span>
+          </div>
+          <div class="entry-line-2">Early-stage Venture / Business Entity 1</div>
+          <div class="entry-details">
+            <ul>
+              <li>Lead technical direction and product implementation for an early-stage business.</li>
+              <li>Apply AI agent and software automation workflows to accelerate development and operations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="entry-line-1">
+            <span class="entry-title">Chief Technology Officer</span>
+            <span class="entry-date">Present</span>
+          </div>
+          <div class="entry-line-2">Early-stage Venture / Business Entity 2</div>
+          <div class="entry-details">
+            <ul>
+              <li>Oversee technology planning, system architecture, and implementation priorities.</li>
+              <li>Experiment with agent-based development workflows for rapid prototyping and technical execution.</li>
             </ul>
           </div>
         </div>
@@ -266,42 +186,37 @@
         <h2 id="projects">Projects</h2>
         <div class="cv-entry">
           <div class="entry-line-1">
-            <span class="entry-title">Project Name</span>
-            <span class="entry-date">2025</span>
+            <span class="entry-title">Academic CV Website</span>
+            <span class="entry-date">2026</span>
           </div>
-          <div class="entry-line-2">Short context or course / lab / personal project</div>
+          <div class="entry-line-2">Personal website deployed with GitHub Pages</div>
           <div class="entry-details">
             <ul>
-              <li>Summarize the problem, your role, stack, and measurable result.</li>
+              <li>Built and deployed a static academic CV website using HTML, CSS, Git, and GitHub Pages.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="entry-line-1">
+            <span class="entry-title">Agentic AI Workflow Experiments</span>
+            <span class="entry-date">Present</span>
+          </div>
+          <div class="entry-line-2">Personal and team-based experimentation</div>
+          <div class="entry-details">
+            <ul>
+              <li>Explore practical uses of AI agents for coding, research organization, automation, and education workflows.</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="cv-section" aria-labelledby="teaching">
-        <h2 id="teaching">Teaching Experience</h2>
+      <section class="cv-section" aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
         <div class="cv-entry">
-          <div class="entry-line-1">
-            <span class="entry-title">Teaching Assistant</span>
-            <span class="entry-date">Sep. 2025 – Dec. 2025</span>
-          </div>
-          <div class="entry-line-2">Course Name, University Name</div>
-          <div class="entry-details">
-            <ul>
-              <li>Describe recitations, grading, tutoring, or course material preparation.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="cv-section" aria-labelledby="awards">
-        <h2 id="awards">Awards and Honors</h2>
-        <div class="cv-entry">
-          <div class="entry-line-1">
-            <span class="entry-title">Award or Scholarship Name</span>
-            <span class="entry-date">2025</span>
-          </div>
-          <div class="entry-line-2">Organization Name</div>
+          <div class="entry-line-2"><strong>Areas:</strong> Agentic AI, LLM agents, software automation, AI education, technical leadership</div>
+          <div class="entry-line-2"><strong>Tools:</strong> Git, GitHub, GitHub Pages, HTML/CSS, AI coding agents</div>
+          <div class="entry-line-2"><strong>Programming:</strong> Add languages here, e.g., Python, JavaScript, C/C++</div>
         </div>
       </section>
     </main>
